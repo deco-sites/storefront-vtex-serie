@@ -17,6 +17,7 @@ export interface Props {
   image?: ImageWidget;
   placement: "left" | "right";
   cta: CTA[];
+  storeDescription?: string;
 }
 
 const PLACEMENT = {
@@ -30,6 +31,7 @@ export default function HeroFlats({
   image,
   placement,
   cta,
+  storeDescription,
 }: Props) {
   return (
     <div>
@@ -69,6 +71,12 @@ export default function HeroFlats({
             <p class="text-zinc-400 text-[16px] md:text-[18px] leading-[150%]">
               {description}
             </p>
+            {storeDescription &&
+              (
+                <p class="text-zinc-400 text-[16px] md:text-[18px] leading-[150%]">
+                  {storeDescription}
+                </p>
+              )}
             <div class="flex flex-col items-center lg:items-start lg:flex-row gap-4">
               {cta?.map((item) => (
                 <a

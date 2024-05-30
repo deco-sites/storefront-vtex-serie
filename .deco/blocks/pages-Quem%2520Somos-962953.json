@@ -1,0 +1,44 @@
+{
+  "name": "Quem Somos",
+  "path": "/quem-somos",
+  "sections": [
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "website/sections/Seo/SeoV2.tsx",
+      "description": "Conheça nosso propósito de alavancar suas vendas e sua marca",
+      "title": "Quem somos e o que fazemos?",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10575/c0d58611-f1e9-4778-b60b-5149960e608c",
+      "titleTemplate": "Deco + Seri.e Design - Conheça-nos",
+      "descriptionTemplate": "Conheça nosso propósito de alavancar suas vendas e sua marca",
+      "type": "article",
+      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10575/d60dcbe9-c8a2-40ed-975a-b804f81f24fd"
+    },
+    {
+      "__resolveType": "site/sections/Content/Hero.tsx",
+      "description": "Empresa inovadora de tecnologia para todo o Brasil",
+      "title": "<h1><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\"><strong><span style=\"color: rgb(230, 126, 35);\" data-mce-style=\"color: rgb(230, 126, 35);\">Quem </span><span style=\"color: rgb(45, 194, 107);\" data-mce-style=\"color: rgb(45, 194, 107);\">Somos</span>?</strong></span><br></h1>",
+      "placement": "left",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10575/c0d58611-f1e9-4778-b60b-5149960e608c",
+      "cta": [
+        {
+          "variant": "Normal",
+          "id": "serie",
+          "href": "https://www.seriedesign.com.br/",
+          "text": "Acesse o site da Seri.e Design!"
+        }
+      ],
+      "storeDescription": "Desde 2006 trazendo soluções inteligentes e criativas, vivemos a inovação desde o atendimento até a execução do projeto."
+    },
+    {
+      "__resolveType": "site/sections/Content/Coupon.tsx",
+      "coupon": "SerieDeco2024",
+      "couponDescription": "10% de desconto no fechamento do seu projeto!"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

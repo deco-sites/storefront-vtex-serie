@@ -1,0 +1,29 @@
+{
+  "name": "Cultura",
+  "path": "/cultura",
+  "sections": [
+    {
+      "__resolveType": "Header - 01"
+    },
+    {
+      "__resolveType": "site/sections/Content/TwoBanners.tsx",
+      "image": [
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10575/1cb5956c-dcc1-4476-a0a3-ab8ff26dcf82",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10575/84bcc5ac-8e23-4708-bcbc-ec2ac9aecf68"
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Content/Lugar.tsx",
+      "lugar": "Paiçandu",
+      "temperatura": {
+        "__resolveType": "weather/loaders/temperature.ts",
+        "lat": -23.4581,
+        "long": -52.0494
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

@@ -7,6 +7,9 @@ export default {
   theme: {
     container: { center: true },
     extend: {
+      minWidth: {
+        450: "450px",
+      },
       animation: {
         sliding: "sliding 30s linear infinite",
       },

@@ -10,6 +10,11 @@ export interface SectionBackGround {
   bgImage?: ImageWidget;
 }
 
+export interface LoaderGenericTypes {
+  name?: string;
+  data?: string[];
+}
+
 export type Colors =
   | "Transparent"
   | "Backdrop opacity"
