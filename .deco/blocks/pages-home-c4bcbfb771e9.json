@@ -8,6 +8,17 @@
       "__resolveType": "Product Ad 1"
     },
     {
+      "__resolveType": "site/sections/Product/PartialProductAd.tsx",
+      "productAds": [
+        {
+          "__resolveType": "site/sections/Product/ProductAd.tsx"
+        }
+      ],
+      "message": "Message PArtial",
+      "image": "https://images.vexels.com/media/users/3/288897/isolated/lists/8e38a537b57110a67f45c48ac6208b7b-traa-o-de-cor-de-urso-pardo.png",
+      "buttonTitle": "Próximo Produto via Partial"
+    },
+    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
@@ -281,8 +292,8 @@
       }
     },
     {
-      "title": "Best Sellers",
       "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
+      "title": "Best Sellers",
       "tabs": [
         {
           "title": "Woman",
@@ -350,9 +361,6 @@
     },
     {
       "__resolveType": "Footer - 04"
-    },
-    {
-      "__resolveType": "site/sections/Product/PartialProductAd.tsx"
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
