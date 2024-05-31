@@ -1,30 +1,37 @@
 import { Section } from "deco/mod.ts";
 import { usePartialSection } from "deco/hooks/usePartialSection.ts";
 import ProductAd from "./ProductAd.tsx"
+import type { ProductAd as productAdType} from "../../components/ui/Types.ts";
 
 export interface Props{
     productAds: Section[];
-    message: string;
+    title: string;
     image: string;
     buttonTitle: string;
+    adDescription: string;
 }
 
 export default function PartialProductAd({
-    message = "I Love this Product!",
-    buttonTitle = "Another Product"
+    title = "I Love this Product!",
+    buttonTitle = "Another Product",
+    adDescription,
+    image
 }: Props){
     return(
         <div>
-            PartialProductAd :)
-            {<ProductAd adDescription="Partial Rendering" product={ { "title": "Partial title", "price": "12,99", "imageSrc": "https://play-lh.googleusercontent.com/ldcQMpP7OaVmglCF6kGas9cY_K0PsJzSSosx2saw9KF1m3RHaEXpH_9mwBWaYnkmctk=s256-rw" } } />}
-            <button {...usePartialSection(
+
+            {
+                <ProductAd adDescription="Partial First Rendering" product={ { "title": "Partial fitst title", "price": "12,99", "imageSrc": "https://play-lh.googleusercontent.com/ldcQMpP7OaVmglCF6kGas9cY_K0PsJzSSosx2saw9KF1m3RHaEXpH_9mwBWaYnkmctk=s256-rw" } }  />
+            }
+
+            <button class="bg-orange-400 p-[20px] border-dashed border-2 border-sky-500" {...usePartialSection(
                 {
                     props: {
-                        adDescription: "Partial Funcionou!",
+                        adDescription: {adDescription},
                         product: {
-                            imageSrc: "https://apps.microsoft.com/assets/icons/logo-256x256.png",
-                            title: "Partial Title Alterado",
-                            adDescription: "Uma luta",
+                            imageSrc: {image},
+                            title: {title},
+                            adDescription: {adDescription},
                             price: "9898,00 ( CARO )"
                         }
                     }

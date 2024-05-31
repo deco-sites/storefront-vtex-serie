@@ -8,6 +8,9 @@
       "__resolveType": "Product Ad 1"
     },
     {
+      "__resolveType": "Preview site/sections/Product/PartialProductAd.tsx"
+    },
+    {
       "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
@@ -281,8 +284,8 @@
       }
     },
     {
-      "title": "Best Sellers",
       "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
+      "title": "Best Sellers",
       "tabs": [
         {
           "title": "Woman",
