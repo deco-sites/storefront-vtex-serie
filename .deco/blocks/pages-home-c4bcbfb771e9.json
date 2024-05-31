@@ -5,17 +5,7 @@
       "__resolveType": "Header - 01"
     },
     {
-      "__resolveType": "site/sections/Product/ProductAd.tsx",
-      "product": {
-        "title": "Camiseta básica Serie Deco",
-        "description": "Camiseta básica perfeita para o seu dia a dia",
-        "price": "65,50",
-        "imageSrc": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-i0gdW2QzKMLBFSnoeJ3VLteO/user-w7gupM95TvH6Q5FU67UHoRYO/img-WF4cwZaq3frish8CFf6ZiMJA.png?st=2024-05-30T20%3A24%3A38Z&se=2024-05-30T22%3A24%3A38Z&sp=r&sv=2023-11-03&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-05-29T23%3A30%3A03Z&ske=2024-05-30T23%3A30%3A03Z&sks=b&skv=2023-11-03&sig=c9w8e52mLQMdR4ADfLEQt7K8y5FOsMPpYiZtjzSBDrg%3D"
-      },
-      "loader": {
-        "timeToWait": 4,
-        "__resolveType": "site/loaders/slowquote.tsx"
-      }
+      "__resolveType": "Product Ad 1"
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

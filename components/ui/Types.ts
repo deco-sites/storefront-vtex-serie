@@ -10,6 +10,14 @@ export interface SectionBackGround {
   bgImage?: ImageWidget;
 }
 
+export interface ProductAd {
+  title: string;
+  description?: string;
+  price: string;
+  someImage?: ImageWidget;
+  imageSrc: string;
+}
+
 export interface LoaderGenericTypes {
   name?: string;
   data?: string[];

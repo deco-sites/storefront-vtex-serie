@@ -1,0 +1,13 @@
+{
+  "__resolveType": "site/sections/Product/ProductAd.tsx",
+  "product": {
+    "title": "Camiseta básica Serie Deco",
+    "description": "Camiseta básica perfeita para o seu dia a dia",
+    "price": "65,50",
+    "imageSrc": "https://m.media-amazon.com/images/I/61oQftzjO7L._AC_SL1000_.jpg"
+  },
+  "loader": {
+    "timeToWait": 4,
+    "__resolveType": "site/loaders/slowquote.tsx"
+  }
+}

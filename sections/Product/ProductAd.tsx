@@ -1,14 +1,8 @@
-import { LoaderGenericTypes } from "../../components/ui/Types.ts";
+import type { LoaderGenericTypes, ProductAd } from "../../components/ui/Types.ts";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 
-export interface Product {
-  title: string;
-  description?: string;
-  price: string;
-  someImage?: ImageWidget;
-  imageSrc: string;
-}
+
 export interface ListItem {
   text: string;
   bold?: boolean;
@@ -16,7 +10,7 @@ export interface ListItem {
 }
 
 export interface Props {
-  product?: Product;
+  product?: ProductAd;
   adDescription?: string;
   loader?: LoaderGenericTypes;
 }
