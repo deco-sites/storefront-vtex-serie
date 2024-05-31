@@ -8,9 +8,6 @@
       "__resolveType": "Product Ad 1"
     },
     {
-<<<<<<< HEAD
-      "__resolveType": "Preview site/sections/Product/PartialProductAd.tsx"
-=======
       "__resolveType": "site/sections/Product/PartialProductAd.tsx",
       "productAds": [
         {
@@ -19,8 +16,9 @@
       ],
       "message": "Message PArtial",
       "image": "https://images.vexels.com/media/users/3/288897/isolated/lists/8e38a537b57110a67f45c48ac6208b7b-traa-o-de-cor-de-urso-pardo.png",
-      "buttonTitle": "Próximo Produto via Partial"
->>>>>>> d7c8c516cc5057cb7936d2bce0f5ba1f76f446b2
+      "buttonTitle": "Próximo Produto via Partial",
+      "title": "Partial Title",
+      "adDescription": "Description Partial"
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
