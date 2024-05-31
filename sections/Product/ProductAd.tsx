@@ -1,7 +1,9 @@
-import type { LoaderGenericTypes, ProductAd } from "../../components/ui/Types.ts";
+import type {
+  LoaderGenericTypes,
+  ProductAd,
+} from "../../components/ui/Types.ts";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-
 
 export interface ListItem {
   text: string;
