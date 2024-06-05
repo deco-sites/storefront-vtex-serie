@@ -15,6 +15,8 @@ export interface Props {
   product?: ProductAd;
   adDescription?: string;
   loader?: LoaderGenericTypes;
+  vertical?: boolean;
+  animateImage?: boolean;
 }
 
 export function ErrorFallback({ error }: { error: Error }) {
@@ -46,23 +48,39 @@ export function ErrorFallback({ error }: { error: Error }) {
 export default function ProductAd(props: Props) {
   return (
     <div class="flex">
-      <div class=" min-w-450 bg-gray-200 flex-shrink flex-grow-0 basis-0 flex-wrap justify-center py-3 flex m-auto rounded border-orange-500 ">
-        <div>
+      <div class=" w-[100%] max-w-650 bg-gray-200 flex-shrink flex-grow basis-0 flex-wrap justify-center py-3 flex m-auto rounded border-orange-500 ">
+        <div className="bg-secondary">
           {props.product &&
             (
-              <div class="justify-center flex-wrap flex *:flex-shrink-0 *:flex-grow *:basis-full px-3 text-center">
-                <div>
-                  <img src={props.product.imageSrc} alt={props.product.title} />
+              <div class="justify-center flex-wrap flex px-3 text-center relative">
+                <span className="absolute right-3 top-0 border rounded-xl py-1 px-2 text-cyan-300 border-stone-400">
+                  Save
+                </span>
+                <div className="lg:w-[40%] md:w-full">
+                  <img className="w-[100%] max-w-[450px] m-auto" src={props.product.imageSrc} alt={props.product.title} />
                 </div>
-                <h2 class="text-base py-2 text-blue-500">
-                  {props.product.title}
-                </h2>
-                <p class="description text-blue-500">
-                  {props.adDescription ?? (props.product.description)}
-                </p>
-                <p class="text-green-400 font-bold text-lg">
-                  {props.product.price}
-                </p>
+                <div className="lg:w-[60%] md:w-full flex justify-between flex-col md:pl-3 p-0 w-[100%]">
+
+                  <div className="left-top relative">
+                    <h2 class=" py-2 text-black text-[22px] text-center md:text-left">
+                      {props.product.title}
+                    </h2>
+                    <p class=" text-center md:text-left description text-orange-500">
+                      {props.adDescription ?? (props.product.description)}
+                    </p>
+                  </div>
+
+                  <div className="right-down">
+                    <p class="text-green-400 font-bold text-2xl  text-center md:text-right pb-3">
+                      R${props.product.price}
+                    </p>
+
+                    <div className=" text-center md:text-right space space-x-2">
+                      <button className=" block m-auto md:inline md:m-[unset] text-black border rounded border-orange-400 px-2 py-1" >Mais detalhes</button>
+                      <button className=" block m-auto md:inline md:m-[unset] text-black border rounded border-orange-400 px-2 py-1" >Comprar</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             )}
         </div>

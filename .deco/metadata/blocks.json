@@ -340,5 +340,9 @@
   "/.deco/blocks/Product%20Ad%201.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Product/ProductAd.tsx"
+  },
+  "/.deco/blocks/Serie%20Design%20Product%20T-shirt.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Product/ProductAd.tsx"
   }
 }

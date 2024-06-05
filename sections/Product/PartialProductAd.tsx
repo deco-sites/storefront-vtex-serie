@@ -1,54 +1,55 @@
 import { Section } from "deco/mod.ts";
 import { usePartialSection } from "deco/hooks/usePartialSection.ts";
-import ProductAd from "./ProductAd.tsx";
-import type { ProductAd as productAdType } from "../../components/ui/Types.ts";
+import { useSignal } from "@preact/signals";
 
 export interface Props {
   productAds: Section[];
-  title: string;
-  image: string;
+  currentProduct?: number;
   buttonTitle: string;
-  adDescription: string;
 }
 
 export default function PartialProductAd({
-  title = "I Love this Product!",
   buttonTitle = "Another Product",
-  adDescription,
-  image,
+  productAds,
+  currentProduct = 0
 }: Props) {
+
+  const section = productAds[currentProduct];
+  
   return (
     <div>
-      {
-        <ProductAd
-          adDescription="Partial First Rendering"
+      <div>
+
+        <section.Component
+          key={0}
           product={{
-            "title": "Partial fitst title",
-            "price": "12,99",
-            "imageSrc":
-              "https://play-lh.googleusercontent.com/ldcQMpP7OaVmglCF6kGas9cY_K0PsJzSSosx2saw9KF1m3RHaEXpH_9mwBWaYnkmctk=s256-rw",
+            description: section.props.adDescription ?? section.props.description,
+            title: section.props.product.title,
+            price: section.props.product.price,
+            imageSrc: section.props.product.imageSrc
           }}
         />
-      }
 
-      <button
-        class="bg-orange-400 p-[20px] border-dashed border-2 border-sky-500"
-        {...usePartialSection(
-          {
-            props: {
-              adDescription: { adDescription },
-              product: {
-                imageSrc: { image },
-                title: { title },
-                adDescription: { adDescription },
-                price: "9898,00 ( CARO )",
+      <p>
+        Length: {productAds.length}
+      </p>
+      {
+        <button
+          class="bg-orange-400 p-[20px] border-dashed border-2 border-sky-500"
+          {...usePartialSection(
+            {
+              props: {
+                currentProduct: productAds.length == currentProduct +1 ? 0 : currentProduct + 1
               },
             },
-          },
-        )}
-      >
-        {buttonTitle}
-      </button>
+          )}
+        >
+          {buttonTitle}
+        </button>
+      }
+
+      
+      </div>
     </div>
   );
 }

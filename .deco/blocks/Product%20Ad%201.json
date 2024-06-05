@@ -4,10 +4,10 @@
     "title": "Camiseta básica Serie Deco",
     "description": "Camiseta básica perfeita para o seu dia a dia",
     "price": "65,50",
-    "imageSrc": "https://m.media-amazon.com/images/I/61oQftzjO7L._AC_SL1000_.jpg"
+    "imageSrc": "https://static.netshoes.com.br/produtos/camiseta-ssb-brand-masculina-lisa-basica-100-algodao/60/70P-0003-060/70P-0003-060_zoom1.jpg?ts=1636498326&ims=544x"
   },
   "loader": {
-    "timeToWait": 4,
-    "__resolveType": "site/loaders/slowquote.tsx"
-  }
+    "data": []
+  },
+  "adDescription": "Deco Dx T-shirt"
 }

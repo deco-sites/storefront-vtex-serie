@@ -10,6 +10,9 @@ export default {
       minWidth: {
         450: "450px",
       },
+      maxWidth: {
+        650: "650px",
+      },
       animation: {
         sliding: "sliding 30s linear infinite",
       },

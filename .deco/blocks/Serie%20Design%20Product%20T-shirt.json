@@ -1,0 +1,13 @@
+{
+  "__resolveType": "site/sections/Product/ProductAd.tsx",
+  "product": {
+    "title": "Camiseta Seri.e Design",
+    "price": "79,99",
+    "imageSrc": "https://alternativafotoproduto.com.br/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/c/a/camiseta-neon-laranja-para-sublima_o-alternativa-fotoproduto.jpg",
+    "description": "Serie Design - Camiseta Para sempre"
+  },
+  "adDescription": "Codificamos oportunidades, humanizamos códigos e convertemos sonhos.",
+  "loader": {
+    "data": []
+  }
+}

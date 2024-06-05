@@ -5,20 +5,20 @@
       "__resolveType": "Header - 01"
     },
     {
-      "__resolveType": "Product Ad 1"
-    },
-    {
       "__resolveType": "site/sections/Product/PartialProductAd.tsx",
       "productAds": [
         {
-          "__resolveType": "site/sections/Product/ProductAd.tsx"
+          "__resolveType": "Product Ad 1"
+        },
+        {
+          "__resolveType": "Serie Design Product T-shirt"
         }
       ],
       "message": "Message PArtial",
-      "image": "https://images.vexels.com/media/users/3/288897/isolated/lists/8e38a537b57110a67f45c48ac6208b7b-traa-o-de-cor-de-urso-pardo.png",
       "buttonTitle": "Próximo Produto via Partial",
-      "title": "Partial Title",
-      "adDescription": "Description Partial"
+      "title": "Initial Title",
+      "adDescription": "Description Partial",
+      "price": "15,99"
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",
