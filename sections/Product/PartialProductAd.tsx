@@ -30,9 +30,6 @@ export default function PartialProductAd({
           }}
         />
 
-      <p>
-        Length: {productAds.length}
-      </p>
       {
         <button
           class="bg-orange-400 p-[20px] border-dashed border-2 border-sky-500"

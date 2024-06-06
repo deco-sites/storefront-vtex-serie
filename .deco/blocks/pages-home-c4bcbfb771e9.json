@@ -15,10 +15,12 @@
         }
       ],
       "message": "Message PArtial",
-      "buttonTitle": "Próximo Produto via Partial",
+      "buttonTitle": "Próximo Produto",
       "title": "Initial Title",
       "adDescription": "Description Partial",
-      "price": "15,99"
+      "price": "15,99",
+      "vertical": false,
+      "animateImage": false
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

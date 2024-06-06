@@ -9,5 +9,7 @@
   "loader": {
     "data": []
   },
-  "adDescription": "Deco Dx T-shirt"
+  "adDescription": "Deco Dx T-shirt",
+  "vertical": true,
+  "animateImage": true
 }

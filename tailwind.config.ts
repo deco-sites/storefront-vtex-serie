@@ -15,11 +15,16 @@ export default {
       },
       animation: {
         sliding: "sliding 30s linear infinite",
+        zoomIn: "zoomIn 300ms linear forwards"
       },
       keyframes: {
         sliding: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
+        },
+        zoomIn: {
+          "0%": { transform: "scale(1)" },
+          "100%": { transform: "scale(1.1)" },
         },
       },
     },
