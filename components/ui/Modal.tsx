@@ -46,7 +46,7 @@ function Modal(props: Props) {
         class="modal-toggle"
         onChange={(e) => e.currentTarget.checked === false && onClose?.()}
       />
-      <div class="modal">
+      <div class="modal z-[99999] overflow-visible">
         {!lazy.value && children}
         <label class="modal-backdrop" for={id}>Close</label>
       </div>

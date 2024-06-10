@@ -57,23 +57,31 @@
         },
         "content": [
           {
-            "type": "stack",
-            "width": 100,
+            "type": "row",
             "isClosable": true,
             "reorderEnabled": true,
             "title": "",
-            "activeItemIndex": 0,
             "content": [
               {
-                "id": "pages::List::list::List::%7B%7D",
-                "title": "<div class=\"contents text-base-700\" id=\"header-pages::List::list::List::%7B%7D\" />",
-                "type": "component",
-                "componentName": "component",
-                "componentState": {
-                  "id": "pages::List::list::List::%7B%7D"
-                },
+                "type": "stack",
+                "width": 100,
                 "isClosable": true,
-                "reorderEnabled": true
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "pages::List::list::List::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-pages::List::list::List::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "pages::List::list::List::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
               }
             ]
           }
@@ -483,7 +491,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 50,
+                "width": 41.66666666666667,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -497,6 +505,7 @@
                     "componentState": {
                       "id": "%2F.deco%2Fblocks%2Fpages-home-c4bcbfb771e9.json::Properties::list::Properties::%7B%7D"
                     },
+                    "width": 30,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -504,7 +513,7 @@
               },
               {
                 "type": "stack",
-                "width": 50,
+                "width": 58.333333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -518,6 +527,7 @@
                     "componentState": {
                       "id": "%2F.deco%2Fblocks%2Fpages-home-c4bcbfb771e9.json::Preview::world::Preview::%7B%7D"
                     },
+                    "width": 70,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -539,6 +549,7 @@
           "accepts": "function",
           "render": "function",
           "viewId": "Properties",
+          "width": 30,
           "id": "%2F.deco%2Fblocks%2Fpages-home-c4bcbfb771e9.json::Properties::list::Properties::%7B%7D",
           "state": {
             "__signal": null
@@ -550,6 +561,7 @@
           "accepts": "function",
           "render": "function",
           "viewId": "Preview",
+          "width": 70,
           "id": "%2F.deco%2Fblocks%2Fpages-home-c4bcbfb771e9.json::Preview::world::Preview::%7B%7D",
           "state": {
             "__signal": null
@@ -1990,7 +2002,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 50,
+                "width": 41.66666666666667,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -2004,6 +2016,7 @@
                     "componentState": {
                       "id": "%2F.deco%2Fblocks%2FProduct%2520Ad%25201.json::Properties::list::Properties::%7B%7D"
                     },
+                    "width": 30,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -2011,7 +2024,7 @@
               },
               {
                 "type": "stack",
-                "width": 50,
+                "width": 58.333333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -2025,6 +2038,7 @@
                     "componentState": {
                       "id": "%2F.deco%2Fblocks%2FProduct%2520Ad%25201.json::Preview::world::Preview::%7B%7D"
                     },
+                    "width": 70,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -2046,6 +2060,7 @@
           "accepts": "function",
           "render": "function",
           "viewId": "Properties",
+          "width": 30,
           "id": "%2F.deco%2Fblocks%2FProduct%2520Ad%25201.json::Properties::list::Properties::%7B%7D",
           "state": {
             "__signal": null
@@ -2057,6 +2072,7 @@
           "accepts": "function",
           "render": "function",
           "viewId": "Preview",
+          "width": 70,
           "id": "%2F.deco%2Fblocks%2FProduct%2520Ad%25201.json::Preview::world::Preview::%7B%7D",
           "state": {
             "__signal": null
@@ -2344,7 +2360,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 50,
+                "width": 41.66666666666667,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -2358,6 +2374,7 @@
                     "componentState": {
                       "id": "%2F.deco%2Fblocks%2FSerie%2520Design%2520Product%2520T-shirt.json::Properties::list::Properties::%7B%7D"
                     },
+                    "width": 30,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -2365,7 +2382,7 @@
               },
               {
                 "type": "stack",
-                "width": 50,
+                "width": 58.333333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -2379,6 +2396,7 @@
                     "componentState": {
                       "id": "%2F.deco%2Fblocks%2FSerie%2520Design%2520Product%2520T-shirt.json::Preview::world::Preview::%7B%7D"
                     },
+                    "width": 70,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -2400,6 +2418,7 @@
           "accepts": "function",
           "render": "function",
           "viewId": "Properties",
+          "width": 30,
           "id": "%2F.deco%2Fblocks%2FSerie%2520Design%2520Product%2520T-shirt.json::Properties::list::Properties::%7B%7D",
           "state": {
             "__signal": null
@@ -2411,6 +2430,7 @@
           "accepts": "function",
           "render": "function",
           "viewId": "Preview",
+          "width": 70,
           "id": "%2F.deco%2Fblocks%2FSerie%2520Design%2520Product%2520T-shirt.json::Preview::world::Preview::%7B%7D",
           "state": {
             "__signal": null

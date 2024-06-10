@@ -18,7 +18,7 @@ export default function PartialProductAd({
   
   return (
     <div>
-      <div>
+      <div className={" hover:animate-animate__headShake relative z-[999999] translate-x-0 "}>
 
         <section.Component
           key={0}
@@ -32,11 +32,12 @@ export default function PartialProductAd({
 
       {
         <button
-          class="bg-orange-400 p-[20px] border-dashed border-2 border-sky-500"
+          class="bg-orange-400 p-[20px] border-dashed border-2 border-sky-500 block mx-auto my-2"
           {...usePartialSection(
             {
               props: {
-                currentProduct: productAds.length == currentProduct +1 ? 0 : currentProduct + 1
+                currentProduct: productAds.length == currentProduct +1 ? 0 : currentProduct + 1,
+                ...section.props
               },
             },
           )}

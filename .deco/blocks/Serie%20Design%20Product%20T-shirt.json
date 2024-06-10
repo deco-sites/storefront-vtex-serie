@@ -9,5 +9,7 @@
   "adDescription": "Codificamos oportunidades, humanizamos códigos e convertemos sonhos.",
   "loader": {
     "data": []
-  }
+  },
+  "productId": 2,
+  "highlight": true
 }

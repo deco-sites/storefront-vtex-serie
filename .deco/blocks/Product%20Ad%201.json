@@ -11,5 +11,7 @@
   },
   "adDescription": "Deco Dx T-shirt",
   "vertical": true,
-  "animateImage": true
+  "animateImage": true,
+  "productId": 1,
+  "highlight": true
 }

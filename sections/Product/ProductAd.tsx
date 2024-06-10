@@ -2,8 +2,13 @@ import type {
   LoaderGenericTypes,
   ProductAd,
 } from "../../components/ui/Types.ts";
-import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
+
+import SaveProductAd from "../../islands/SaveProductAd/SaveProductAd.tsx";
+import { AppContext } from "../../apps/site.ts";
+import { SectionProps } from "deco/mod.ts";
+
+
 
 export interface ListItem {
   text: string;
@@ -17,6 +22,8 @@ export interface Props {
   loader?: LoaderGenericTypes;
   vertical?: boolean;
   animateImage?: boolean;
+  productId?: number;
+  highlight?: boolean;
 }
 
 export function ErrorFallback({ error }: { error: Error }) {
@@ -45,17 +52,82 @@ export function ErrorFallback({ error }: { error: Error }) {
   );
 }
 
-export default function ProductAd(props: Props) {
+
+//Loading Fallback
+export function LoadingFallback() {
+  // Renderize spinners, esqueletos e outros espaços reservados
+  return (
+    <div
+      style={{ height: "710px" }}
+      class="w-full flex justify-center items-center"
+    >
+      <span class="loading loading-spinner" />
+    </div>
+  );
+}
+
+export const loader = async ( props: Props, req: Request, ctx: AppContext ) => {
+  
+  
+  const registerEventProduct = await fetch("https://camp-api.deco.cx/event", {
+    method: "POST",
+    headers: {
+      'x-api-key': "storefront-vtex-serie",
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      "productId": "productId",
+      "Content": "Content"
+    })
+  });
+
+  
+  const registerEventProductR  = ( await registerEventProduct.json());
+  console.log(' registerEventProduct ', registerEventProduct )
+
+  
+  const getProdEv = await fetch(`https://camp-api.deco.cx/event/${props.productId}`, {
+    method: "GET",
+    headers: {
+      'x-api-key': "storefront-vtex-serie"
+    }
+  });
+
+  
+  const getProdEvR  = ( await getProdEv.json());
+  console.log(' getProdEv ', getProdEv )
+
+  
+
+  return {
+    ...props,
+    registerEventProductR,
+    getProdEvR
+  }
+
+}
+
+
+export default function ProductAd(props: SectionProps<typeof loader>) {
   return (
     <div className="flex">
+      <pre> Product ID: { props.productId } </pre>
+      {
+        props.registerEventProductR &&
+        <p> registerEventProductR: <pre>{JSON.stringify(props.registerEventProductR, null, 2)}</pre> <br /> </p>
+      }
+      {
+        props.getProdEvR &&
+        <p> getProdEvR: <pre>{JSON.stringify(props.getProdEvR, null, 2)}</pre> <br /> </p>
+      }
       <div className=" w-[100%] max-w-650 bg-secondary flex-shrink flex-grow basis-0 flex-wrap justify-center py-3 flex m-auto rounded border-orange-500 ">
         <div className="bg-secondary">
           {props.product &&
             (
               <div className="justify-center flex-wrap flex px-3 text-center relative">
-                <span className="absolute right-3 top-0 bg-secondary border rounded-xl py-1 px-2 text-white border-stone-400">
-                  Save
-                </span>
+                
+                < SaveProductAd product={props.product} />
+
                 <div className={ (props.vertical ? "w-[40%] flex" : " lg:w-[40%] md:w-full " + "flex" ) + " overflow-hidden"}>
                   <img className={ (props.vertical && "ease-in  hover:animate-zoomIn" ) + " w-[100%] max-w-[450px] m-auto"} src={props.product.imageSrc} alt={props.product.title} />
                 </div>
@@ -87,19 +159,6 @@ export default function ProductAd(props: Props) {
             )}
         </div>
       </div>
-    </div>
-  );
-}
-
-//Loading Fallback
-export function LoadingFallback() {
-  // Renderize spinners, esqueletos e outros espaços reservados
-  return (
-    <div
-      style={{ height: "710px" }}
-      class="w-full flex justify-center items-center"
-    >
-      <span class="loading loading-spinner" />
     </div>
   );
 }
