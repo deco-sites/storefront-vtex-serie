@@ -2,8 +2,9 @@ import { Section } from "deco/mod.ts";
 import { usePartialSection } from "deco/hooks/usePartialSection.ts";
 import { useSignal } from "@preact/signals";
 
+
 export interface Props {
-  productAds: Section[];
+  productAds: Section<any>[];
   currentProduct?: number;
   buttonTitle: string;
 }
@@ -15,17 +16,16 @@ export default function PartialProductAd({
 }: Props) {
 
   const section = productAds[currentProduct];
+  const sectionProps = (section.props.product && section.props.product.product) ? section.props.product : section.props;
 
   return (
     <div>
       
       <div className={" hover:animate-animate__headShake relative z-[999999] translate-x-0 "}>
-      Quant section.props { Object.keys(section.props).toString() } <br />
-      section.props::: <pre>{ JSON.stringify(section.props, null, 2) } </pre> <br />
         <section.Component
           key={currentProduct}
           product={{
-            ...section.props
+            ...sectionProps
           }}
   
         />
