@@ -111,7 +111,7 @@ export const loader = async ( props: Props, req: Request, ctx: AppContext ) => {
 export default function ProductAd(props: SectionProps<typeof loader>) {
 
 
-  retrn (
+  return (
      
     <div className="flex">
       <div className=" w-[100%] max-w-650 bg-secondary flex-shrink flex-grow basis-0 flex-wrap justify-center py-3 flex m-auto rounded border-orange-500 ">
