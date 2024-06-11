@@ -16,6 +16,7 @@ export interface ProductAd {
   price: string;
   someImage?: ImageWidget;
   imageSrc: string;
+  product?: object;
 }
 
 export interface LoaderGenericTypes {

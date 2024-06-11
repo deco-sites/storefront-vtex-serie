@@ -15,29 +15,29 @@ export default function PartialProductAd({
 }: Props) {
 
   const section = productAds[currentProduct];
-  
+
   return (
     <div>
+      
       <div className={" hover:animate-animate__headShake relative z-[999999] translate-x-0 "}>
-
+      Quant section.props { Object.keys(section.props).toString() } <br />
+      section.props::: <pre>{ JSON.stringify(section.props, null, 2) } </pre> <br />
         <section.Component
-          key={0}
+          key={currentProduct}
           product={{
-            description: section.props.adDescription ?? section.props.description,
-            title: section.props.product.title,
-            price: section.props.product.price,
-            imageSrc: section.props.product.imageSrc
+            ...section.props
           }}
+  
         />
 
       {
         <button
           class="bg-orange-400 p-[20px] border-dashed border-2 border-sky-500 block mx-auto my-2"
+          // usePartialSection chama o mesmo componente PartialProductAd com novas props
           {...usePartialSection(
             {
               props: {
-                currentProduct: productAds.length == currentProduct +1 ? 0 : currentProduct + 1,
-                ...section.props
+                currentProduct: productAds.length == currentProduct +1 ? 0 : currentProduct + 1
               },
             },
           )}

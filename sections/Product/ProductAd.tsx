@@ -109,17 +109,11 @@ export const loader = async ( props: Props, req: Request, ctx: AppContext ) => {
 
 
 export default function ProductAd(props: SectionProps<typeof loader>) {
-  return (
+
+
+  retrn (
+     
     <div className="flex">
-      <pre> Product ID: { props.productId } </pre>
-      {
-        props.registerEventProductR &&
-        <p> registerEventProductR: <pre>{JSON.stringify(props.registerEventProductR, null, 2)}</pre> <br /> </p>
-      }
-      {
-        props.getProdEvR &&
-        <p> getProdEvR: <pre>{JSON.stringify(props.getProdEvR, null, 2)}</pre> <br /> </p>
-      }
       <div className=" w-[100%] max-w-650 bg-secondary flex-shrink flex-grow basis-0 flex-wrap justify-center py-3 flex m-auto rounded border-orange-500 ">
         <div className="bg-secondary">
           {props.product &&
@@ -160,5 +154,6 @@ export default function ProductAd(props: SectionProps<typeof loader>) {
         </div>
       </div>
     </div>
+      </div>
   );
 }
