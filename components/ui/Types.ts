@@ -1,4 +1,5 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
+import { ProductDetailsPage } from "apps/commerce/types.ts";
 
 export interface Layout {
   sectionWidth?: "100%" | "Contained";
@@ -16,7 +17,7 @@ export interface ProductAd {
   price: string;
   someImage?: ImageWidget;
   imageSrc: string;
-  product?: object;
+  product?: ProductDetailsPage | null;
 }
 
 export interface LoaderGenericTypes {

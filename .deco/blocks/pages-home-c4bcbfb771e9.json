@@ -6,14 +6,7 @@
     },
     {
       "__resolveType": "site/sections/Product/PartialProductAd.tsx",
-      "productAds": [
-        {
-          "__resolveType": "Product Ad 1"
-        },
-        {
-          "__resolveType": "Serie Design Product T-shirt"
-        }
-      ],
+      "productAds": [],
       "message": "Message PArtial",
       "buttonTitle": "Próximo Produto",
       "title": "Initial Title",
@@ -21,6 +14,9 @@
       "price": "15,99",
       "vertical": false,
       "animateImage": false
+    },
+    {
+      "__resolveType": "Product 1"
     },
     {
       "__resolveType": "website/flags/multivariate/section.ts",

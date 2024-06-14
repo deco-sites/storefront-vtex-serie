@@ -4,7 +4,28 @@
     "title": "Camiseta básica Serie Deco",
     "description": "Camiseta básica perfeita para o seu dia a dia",
     "price": "65,50",
-    "imageSrc": "https://static.netshoes.com.br/produtos/camiseta-ssb-brand-masculina-lisa-basica-100-algodao/60/70P-0003-060/70P-0003-060_zoom1.jpg?ts=1636498326&ims=544x"
+    "imageSrc": "https://static.netshoes.com.br/produtos/camiseta-ssb-brand-masculina-lisa-basica-100-algodao/60/70P-0003-060/70P-0003-060_zoom1.jpg?ts=1636498326&ims=544x",
+    "data": {
+      "breadcrumbList": {},
+      "product": {
+        "additionalProperty": [],
+        "aggregateRating": {},
+        "brand": {},
+        "isRelatedTo": [],
+        "isSimilarTo": [],
+        "isVariantOf": {
+          "hasVariant": [],
+          "additionalProperty": []
+        },
+        "offers": {
+          "offers": []
+        },
+        "review": [],
+        "isAccessoryOrSparePartFor": [],
+        "questions": []
+      },
+      "seo": {}
+    }
   },
   "loader": {
     "data": []
@@ -13,5 +34,6 @@
   "vertical": true,
   "animateImage": true,
   "productId": 1,
-  "highlight": true
+  "highlight": true,
+  "getProdEvR": {}
 }

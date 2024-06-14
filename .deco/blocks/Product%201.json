@@ -1,28 +1,23 @@
 {
   "__resolveType": "site/sections/Product/ProductAd.tsx",
-  "adDescription": "Codificamos oportunidades, humanizamos códigos e convertemos sonhos.",
-  "loader": {
-    "data": []
-  },
-  "productId": 2,
-  "highlight": true,
   "getProdEvR": {},
   "product": {
-    "__resolveType": "commerce/loaders/product/extensions/detailsPage.ts",
-    "data": {
+    "product": {
       "@type": "ProductDetailsPage",
       "breadcrumbList": {
         "@type": "BreadcrumbList",
-        "numberOfItems": 3,
+        "numberOfItems": 2,
         "itemListElement": [
           {
             "@type": "ListItem",
             "image": [],
             "video": [],
-            "item": "s",
+            "item": "deco",
             "position": 1
           }
-        ]
+        ],
+        "@id": "1",
+        "name": "Camiseta deco"
       },
       "product": {
         "@type": "Product",
@@ -39,21 +34,37 @@
           "@type": "ProductGroup",
           "hasVariant": [],
           "additionalProperty": [],
-          "productGroupID": "123"
+          "productGroupID": "dec1",
+          "image": [
+            {
+              "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10575/9b82517f-b553-4fc7-947b-46fdf579077e"
+            }
+          ]
         },
         "offers": {
           "@type": "AggregateOffer",
           "offers": [],
-          "highPrice": 50,
-          "lowPrice": 40,
-          "offerCount": 20
+          "highPrice": 59.99,
+          "lowPrice": 45.9,
+          "offerCount": 7
         },
         "review": [],
         "isAccessoryOrSparePartFor": [],
         "questions": [],
-        "productID": "2"
+        "productID": "1",
+        "sku": "dec1"
       }
     },
-    "extensions": []
-  }
+    "title": "Deco T-Shirt",
+    "description": "Camiseta Deco",
+    "price": "59,99",
+    "imageSrc": "..."
+  },
+  "loader": {
+    "data": []
+  },
+  "adDescription": "Uma camiseta para qualquer hora!",
+  "vertical": true,
+  "animateImage": true,
+  "highlight": true
 }

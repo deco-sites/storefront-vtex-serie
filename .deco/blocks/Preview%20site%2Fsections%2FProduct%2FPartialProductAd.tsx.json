@@ -4,5 +4,6 @@
   "title": "Titulo Partial",
   "image": "https://img.freepik.com/vetores-gratis/animal-urso-pardo-em-fundo-branco_1308-65462.jpg",
   "buttonTitle": "Outro produto via Partial",
-  "adDescription": "Parcialmente funcionando :)"
+  "adDescription": "Parcialmente funcionando :)",
+  "currentProduct": 0
 }

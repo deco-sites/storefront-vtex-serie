@@ -6,6 +6,8 @@ import Image from "apps/website/components/Image.tsx";
 import SaveProductAd from "../../islands/SaveProductAd/SaveProductAd.tsx";
 import { AppContext } from "../../apps/site.ts";
 import { SectionProps } from "deco/mod.ts";
+import { ProductDetailsPage } from "apps/commerce/types.ts";
+
 
 export interface ListItem {
   text: string;
@@ -16,6 +18,7 @@ export interface ListItem {
 export interface Props {
   getProdEvR: any;
   product?: ProductAd;
+  // product?: ProductDetailsPage | null;
   adDescription?: string;
   loader?: LoaderGenericTypes;
   vertical?: boolean;
@@ -91,20 +94,12 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
     }
   });
   const getProdEvR = await getProdEv.json();
-  const getTotalProdEv = await fetch(`https://camp-api.deco.cx/events`, {
-    method: "GET",
-    headers: {
-      'x-api-key': "storefront-vtex-serie"
-    }
-  });
 
-  const getTotalProdEvR = await getTotalProdEv.json();
 
   return {
     ...props,
     registerEventProductR,
-    getProdEvR,
-    getTotalProdEvR
+    getProdEvR
   };
 }
 
@@ -122,6 +117,8 @@ export default function ProductAd(props: SectionProps<typeof loader>) {
 
   const sectionProps = getSectionProps(props);
 
+  const prodProps = sectionProps.product?.product;
+
   return (
     <div>
       <div className="flex">
@@ -130,7 +127,7 @@ export default function ProductAd(props: SectionProps<typeof loader>) {
           <div className="bg-secondary">
             {sectionProps.product && (
               <div className="justify-center flex-wrap flex px-3 text-center relative">
-                <SaveProductAd product={sectionProps.product} />
+                {/* <SaveProductAd product={sectionProps.product} productId={sectionProps.productId ?? 0 }  /> */}
                 <div className={(sectionProps.vertical ? "w-[40%] flex" : " lg:w-[40%] md:w-full " + "flex") + " overflow-hidden"}>
 
                   {( sectionProps.highlight  && sectionProps.getProdEvR && sectionProps.getProdEvR.comments.length > 3 ) && 
@@ -139,20 +136,22 @@ export default function ProductAd(props: SectionProps<typeof loader>) {
                     </span>
                   }
 
-                  <img className={(sectionProps.vertical && "ease-in hover:animate-zoomIn") + " w-[100%] max-w-[450px] m-auto"} src={sectionProps.product.imageSrc} alt={sectionProps.product.title} />
+                  sectionProps: {JSON.stringify(sectionProps, null, 2)} <br />
+
+                  <img className={(sectionProps.vertical && "ease-in hover:animate-zoomIn") + " w-[100%] max-w-[450px] m-auto"} src={sectionProps.adDescription} alt={sectionProps.adDescription} />
                 </div>
                 <div className={(sectionProps.vertical ? "w-[60%] pl-3" : " lg:w-[60%] md:w-full md:pl-3 w-[100%] ") + " flex justify-between flex-col p-0"}>
                   <div className={"left-top relative"}>
                     <h2 className={(sectionProps.vertical ? "text-left pr-[50px]" : " md:text-left text-center ") + " py-2 text-white text-[22px]"}>
-                      {sectionProps.product.title}
+                      {prodProps?.product?.name}
                     </h2>
                     <p className={(sectionProps.vertical ? "text-left " : "md:text-left text-center ") + " description text-orange-500"}>
-                      {sectionProps.adDescription ?? sectionProps.product.description}
+                      {sectionProps.adDescription ?? prodProps?.product?.description}
                     </p>
                   </div>
                   <div className="right-down">
                     <p className={(sectionProps.vertical ? "text-right " : "text-center md:text-right ") + "text-green-400 font-bold text-2xl pb-3"}>
-                      R${sectionProps.product.price}
+                      R${prodProps?.product?.offers?.lowPrice ?? prodProps?.product?.offers?.highPrice}
                     </p>
                     <div className={(sectionProps.vertical ? "text-right space-x-2 " : "text-center md:text-right md:space-x-2 space-y-2 ")}>
                       <button className={(sectionProps.vertical ? " m-[unset] inline " : " md:m-[unset] md:inline") + " block m-auto text-white border rounded border-white px-2 py-1"}>Mais detalhes</button>

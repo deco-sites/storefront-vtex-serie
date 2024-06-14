@@ -1,16 +1,15 @@
+import { SectionProps } from "deco/types.ts";
 import { AppContext } from "../../apps/site.ts";
 
 export interface Props{
-    getTotalProdEvR: {
-        total: string
-    }
+
 }
 
-export default function TotalEvents(props: Props){
+export default function TotalEvents(props: SectionProps<typeof loader>){
     return(
-        <div className={"flex justify-center content-center"}>
-            <div className={"rounded-lg border-black border-2"} >
-                <p>Sites Save: { props.getTotalProdEvR.total }</p>
+        <div className="flex w-[max-content] m-auto bg-white p-2 border-2 border-green-300 rounded px-4"> 
+            <div className="text-black uppercase"> 
+                <p> Site Saves: { props.getTotalProdEvR.total } </p>
             </div>
         </div>
     )

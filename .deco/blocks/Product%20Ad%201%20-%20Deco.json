@@ -1,0 +1,36 @@
+{
+  "__resolveType": "site/sections/Product/ProductAd.tsx",
+  "getProdEvR": {},
+  "product": {
+    "@type": "ProductDetailsPage",
+    "breadcrumbList": {
+      "@type": "BreadcrumbList",
+      "numberOfItems": 1,
+      "@id": "1",
+      "image": [
+        {
+          "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10575/98a5e132-6c34-4b1e-ba83-192d4033a867"
+        }
+      ],
+      "name": "Camiseta Deco",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "image": [],
+          "video": [],
+          "item": "deco",
+          "position": 1
+        }
+      ]
+    },
+    "title": "Deco T-Shirt",
+    "price": "99,99",
+    "imageSrc": "..."
+  },
+  "loader": {
+    "data": []
+  },
+  "adDescription": "Deco - Performance e progresso!",
+  "vertical": true,
+  "animateImage": true
+}
