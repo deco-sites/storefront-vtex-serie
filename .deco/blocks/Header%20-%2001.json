@@ -8,9 +8,7 @@
     "width": 100,
     "height": 40
   },
-  "alerts": [
-    "Use this template to create your store at deco.cx"
-  ],
+  "alerts": [],
   "navItems": {
     "__resolveType": "navbar"
   },

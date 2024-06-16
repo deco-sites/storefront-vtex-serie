@@ -1,6 +1,10 @@
 {
   "__resolveType": "site/sections/Product/ProductAd.tsx",
-  "getProdEvR": {},
+  "getProdEvR": {
+    "comments": [
+      null
+    ]
+  },
   "product": {
     "product": {
       "@type": "ProductDetailsPage",
@@ -53,6 +57,11 @@
         "questions": [],
         "productID": "1",
         "sku": "dec1"
+      },
+      "seo": {
+        "title": "Camiseta Deco - Oficial",
+        "description": "Uma camiseta sem limites",
+        "canonical": "canonicaltag"
       }
     },
     "title": "Deco T-Shirt",
@@ -66,5 +75,6 @@
   "adDescription": "Uma camiseta para qualquer hora!",
   "vertical": true,
   "animateImage": true,
-  "highlight": true
+  "highlight": true,
+  "productId": 1
 }

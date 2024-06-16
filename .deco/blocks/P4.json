@@ -1,0 +1,90 @@
+{
+  "__resolveType": "site/sections/Product/ProductAd.tsx",
+  "product": {
+    "title": "Camiseta Brasil",
+    "description": "Camiseta Brasil description",
+    "price": "150,00",
+    "someImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10575/80773b37-9067-4881-abf3-78b92a6eba52",
+    "imageSrc": "...",
+    "product": {
+      "product": {
+        "productID": "4",
+        "@type": "Product",
+        "sku": "serie1",
+        "category": "brasil",
+        "offers": {
+          "@type": "AggregateOffer",
+          "highPrice": 260,
+          "lowPrice": 240,
+          "offerCount": 10,
+          "offers": [
+            {
+              "@type": "Offer",
+              "availability": "https://schema.org/BackOrder",
+              "inventoryLevel": {},
+              "itemCondition": "https://schema.org/DamagedCondition",
+              "priceSpecification": [],
+              "giftSkuIds": [],
+              "teasers": [],
+              "image": [],
+              "video": [],
+              "price": 65,
+              "priceCurrency": "R$"
+            }
+          ]
+        },
+        "additionalProperty": [],
+        "aggregateRating": {
+          "@type": "AggregateRating"
+        },
+        "brand": {
+          "@type": "Brand"
+        },
+        "isRelatedTo": [],
+        "isSimilarTo": [],
+        "isVariantOf": {
+          "@type": "ProductGroup",
+          "hasVariant": [],
+          "additionalProperty": [],
+          "productGroupID": "serie1",
+          "image": [
+            {
+              "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10575/80773b37-9067-4881-abf3-78b92a6eba52"
+            }
+          ]
+        },
+        "review": [],
+        "isAccessoryOrSparePartFor": [],
+        "questions": []
+      },
+      "@type": "ProductDetailsPage",
+      "breadcrumbList": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "image": [],
+            "video": [],
+            "item": "asdasd",
+            "position": 2
+          }
+        ],
+        "numberOfItems": 4
+      },
+      "seo": {
+        "title": "Camiseta do Brasil - Edição especial",
+        "canonical": "seried",
+        "description": "A camiseta Oficial da Seri.e!",
+        "noIndexing": true
+      }
+    }
+  },
+  "vertical": false,
+  "animateImage": true,
+  "productId": 4,
+  "highlight": true,
+  "loader": {
+    "data": []
+  },
+  "adDescription": "Brasil sil sil sil sil"
+}

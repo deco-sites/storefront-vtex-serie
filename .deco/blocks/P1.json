@@ -1,0 +1,90 @@
+{
+  "__resolveType": "site/sections/Product/ProductAd.tsx",
+  "product": {
+    "title": "Camiseta Seri.e Design",
+    "description": "Deco description",
+    "price": "70,00",
+    "someImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10575/6ccff070-e209-4438-91e6-28354afac422",
+    "imageSrc": "...",
+    "product": {
+      "product": {
+        "productID": "2",
+        "@type": "Product",
+        "sku": "serie1",
+        "category": "serie",
+        "offers": {
+          "@type": "AggregateOffer",
+          "highPrice": 70,
+          "lowPrice": 60,
+          "offerCount": 10,
+          "offers": [
+            {
+              "@type": "Offer",
+              "availability": "https://schema.org/BackOrder",
+              "inventoryLevel": {},
+              "itemCondition": "https://schema.org/DamagedCondition",
+              "priceSpecification": [],
+              "giftSkuIds": [],
+              "teasers": [],
+              "image": [],
+              "video": [],
+              "price": 65,
+              "priceCurrency": "R$"
+            }
+          ]
+        },
+        "additionalProperty": [],
+        "aggregateRating": {
+          "@type": "AggregateRating"
+        },
+        "brand": {
+          "@type": "Brand"
+        },
+        "isRelatedTo": [],
+        "isSimilarTo": [],
+        "isVariantOf": {
+          "@type": "ProductGroup",
+          "hasVariant": [],
+          "additionalProperty": [],
+          "productGroupID": "serie1",
+          "image": [
+            {
+              "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10575/6ccff070-e209-4438-91e6-28354afac422"
+            }
+          ]
+        },
+        "review": [],
+        "isAccessoryOrSparePartFor": [],
+        "questions": []
+      },
+      "@type": "ProductDetailsPage",
+      "breadcrumbList": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "image": [],
+            "video": [],
+            "item": "asdasd",
+            "position": 2
+          }
+        ],
+        "numberOfItems": 4
+      },
+      "seo": {
+        "title": "Seri.e t-Shirt",
+        "canonical": "seried",
+        "description": "A camiseta Oficial da Seri.e!",
+        "noIndexing": true
+      }
+    }
+  },
+  "vertical": true,
+  "animateImage": true,
+  "productId": 2,
+  "highlight": true,
+  "loader": {
+    "data": []
+  },
+  "adDescription": "Estilo e inovação"
+}

@@ -1,0 +1,88 @@
+{
+  "__resolveType": "site/sections/Product/ProductAd.tsx",
+  "product": {
+    "title": "Deco",
+    "description": "Deco description",
+    "price": "50,00",
+    "someImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10575/9b82517f-b553-4fc7-947b-46fdf579077e",
+    "imageSrc": "...",
+    "product": {
+      "product": {
+        "productID": "1",
+        "@type": "Product",
+        "sku": "Deco1",
+        "category": "deco",
+        "offers": {
+          "@type": "AggregateOffer",
+          "highPrice": 56,
+          "lowPrice": 50,
+          "offerCount": 10,
+          "offers": [
+            {
+              "@type": "Offer",
+              "availability": "https://schema.org/BackOrder",
+              "inventoryLevel": {},
+              "itemCondition": "https://schema.org/DamagedCondition",
+              "priceSpecification": [],
+              "giftSkuIds": [],
+              "teasers": [],
+              "image": [],
+              "video": [],
+              "price": 65,
+              "priceCurrency": "R$"
+            }
+          ]
+        },
+        "additionalProperty": [],
+        "aggregateRating": {
+          "@type": "AggregateRating"
+        },
+        "brand": {
+          "@type": "Brand"
+        },
+        "isRelatedTo": [],
+        "isSimilarTo": [],
+        "isVariantOf": {
+          "@type": "ProductGroup",
+          "hasVariant": [],
+          "additionalProperty": [],
+          "productGroupID": "Deco",
+          "image": [
+            {
+              "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10575/98a5e132-6c34-4b1e-ba83-192d4033a867"
+            }
+          ]
+        },
+        "review": [],
+        "isAccessoryOrSparePartFor": [],
+        "questions": []
+      },
+      "@type": "ProductDetailsPage",
+      "breadcrumbList": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "image": [],
+            "video": [],
+            "item": "asdasd",
+            "position": 2
+          }
+        ],
+        "numberOfItems": 2
+      },
+      "seo": {
+        "title": "Deco t-Shirt",
+        "description": "Leveza e agilidade!",
+        "canonical": "deco"
+      }
+    }
+  },
+  "vertical": true,
+  "animateImage": true,
+  "productId": 1,
+  "highlight": true,
+  "loader": {
+    "data": []
+  }
+}

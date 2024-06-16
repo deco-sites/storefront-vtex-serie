@@ -1,9 +1,22 @@
 {
   "__resolveType": "site/sections/Product/PartialProductAd.tsx",
-  "productAds": [],
+  "productAds": [
+    {
+      "__resolveType": "P 1"
+    },
+    {
+      "__resolveType": "P1"
+    },
+    {
+      "__resolveType": "P3"
+    },
+    {
+      "__resolveType": "P4"
+    }
+  ],
   "title": "Titulo Partial",
   "image": "https://img.freepik.com/vetores-gratis/animal-urso-pardo-em-fundo-branco_1308-65462.jpg",
-  "buttonTitle": "Outro produto via Partial",
+  "buttonTitle": " > ",
   "adDescription": "Parcialmente funcionando :)",
   "currentProduct": 0
 }

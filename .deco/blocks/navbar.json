@@ -11,7 +11,19 @@
       "image": [],
       "children": [],
       "name": "Quem Somos",
-      "url": "quem-somos"
+      "url": "/quem-somos"
+    },
+    {
+      "children": [],
+      "image": [],
+      "name": "Test",
+      "url": "/test"
+    },
+    {
+      "children": [],
+      "image": [],
+      "url": "/stats",
+      "name": "Stats Page"
     }
   ],
   "__resolveType": "commerce/loaders/navbar.ts"

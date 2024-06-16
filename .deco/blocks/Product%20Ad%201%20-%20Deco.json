@@ -1,6 +1,10 @@
 {
   "__resolveType": "site/sections/Product/ProductAd.tsx",
-  "getProdEvR": {},
+  "getProdEvR": {
+    "comments": [
+      "asdas"
+    ]
+  },
   "product": {
     "@type": "ProductDetailsPage",
     "breadcrumbList": {
@@ -25,7 +29,37 @@
     },
     "title": "Deco T-Shirt",
     "price": "99,99",
-    "imageSrc": "..."
+    "imageSrc": "...",
+    "product": {
+      "@type": "ProductDetailsPage",
+      "breadcrumbList": {
+        "@type": "BreadcrumbList"
+      },
+      "product": {
+        "@type": "Product",
+        "additionalProperty": [],
+        "aggregateRating": {
+          "@type": "AggregateRating"
+        },
+        "brand": {
+          "@type": "Brand"
+        },
+        "isRelatedTo": [],
+        "isSimilarTo": [],
+        "isVariantOf": {
+          "@type": "ProductGroup",
+          "hasVariant": [],
+          "additionalProperty": []
+        },
+        "offers": {
+          "@type": "AggregateOffer",
+          "offers": []
+        },
+        "review": [],
+        "isAccessoryOrSparePartFor": [],
+        "questions": []
+      }
+    }
   },
   "loader": {
     "data": []

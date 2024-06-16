@@ -1,10 +1,12 @@
 import { Section } from "deco/mod.ts";
 import { usePartialSection } from "deco/hooks/usePartialSection.ts";
 import { useSignal } from "@preact/signals";
-
+import type {
+  ProductAdSection
+} from "../../components/ui/Types.ts";
 
 export interface Props {
-  productAds: Section<any>[];
+  productAds: Section[];
   currentProduct?: number;
   buttonTitle: string;
 }
@@ -16,23 +18,25 @@ export default function PartialProductAd({
 }: Props) {
 
   const section = productAds[currentProduct];
-  const sectionProps = (section.props.product && section.props.product.product) ? section.props.product : section.props;
+  // const sectionProps = (section?.props.product && section?.props.product.product) ? section?.props.product : section?.props;
 
   return (
     <div>
       
-      <div className={" hover:animate-animate__headShake relative z-[999999] translate-x-0 "}>
+      <div className={" hover:animate-animate__headShake relative z-[50] translate-x-0 flex pb-2 justify-around "}>
+      {/* currentProduct: { currentProduct } <br />
+      sectionPropsPARTIAL : {JSON.stringify(section.props, null, 2)} <br /> */}
         <section.Component
           key={currentProduct}
-          product={{
-            ...sectionProps
-          }}
+          {
+            ...section.props
+          }
   
         />
 
       {
         <button
-          class="bg-orange-400 p-[20px] border-dashed border-2 border-sky-500 block mx-auto my-2"
+          class="bg-orange-400 p-[4px] border-dashed border-2 border-sky-500 block my-auto"
           // usePartialSection chama o mesmo componente PartialProductAd com novas props
           {...usePartialSection(
             {

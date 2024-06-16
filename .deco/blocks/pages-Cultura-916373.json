@@ -20,6 +20,12 @@
         "lat": -23.4581,
         "long": -52.0494
       }
+    },
+    {
+      "__resolveType": "website/sections/Seo/SeoV2.tsx",
+      "title": "Cultura ",
+      "description": "É o que nos move",
+      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10575/e46f57be-cb19-40ba-bfe6-24911edb5d30"
     }
   ],
   "seo": {

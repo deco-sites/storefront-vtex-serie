@@ -1,9 +1,10 @@
 import { FnContext } from "deco/types.ts";
 import { invoke } from "../../runtime.ts";
 
+
 export interface Props{
   comment: string,
-  productId: number
+  productId: string | number
 }
 
 export default async function postProdEv(
@@ -14,7 +15,6 @@ export default async function postProdEv(
 
 ){
 
-  console.log('prodsEvents Called', props.comment, props.productId)
 
     const myHeaders = new Headers();
     myHeaders.append("x-api-key", "storefront-vtex-serie");
@@ -32,6 +32,8 @@ export default async function postProdEv(
     };
 
     const registerEventProduct = await fetch("https://camp-api.deco.cx/event", requestOptions  );
+
+    
 
     return await registerEventProduct.json()
 

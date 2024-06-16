@@ -1,0 +1,70 @@
+{
+  "name": "Matchers Study",
+  "path": "/matchers-study",
+  "sections": {
+    "__resolveType": "website/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "site/sections/Content/CallToAction.tsx",
+            "text": "Escócia e Escandinávia Mather",
+            "cta": [
+              {
+                "variant": "Normal",
+                "text": "Escócia e Escandinávia ",
+                "href": "teste"
+              }
+            ]
+          }
+        ],
+        "rule": {
+          "__resolveType": "site/matchers/utm.ts",
+          "campanhas": [
+            "escócia",
+            "escandinávia"
+          ]
+        }
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "site/sections/Content/CallToAction.tsx",
+            "cta": [
+              {
+                "variant": "Normal",
+                "href": "brasil",
+                "text": "Brasilsilsilsil"
+              }
+            ],
+            "text": "Brasil, Portugal e América* Mather"
+          }
+        ],
+        "rule": {
+          "__resolveType": "site/matchers/utm.ts",
+          "campanhas": [
+            "brasil",
+            "portugal",
+            "america*"
+          ]
+        }
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "site/sections/MatchersStudy.tsx",
+            "searchString": "brasil",
+            "stringWildCard": "brasil"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        }
+      }
+    ]
+  },
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

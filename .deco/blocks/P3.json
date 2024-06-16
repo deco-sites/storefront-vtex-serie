@@ -1,0 +1,90 @@
+{
+  "__resolveType": "site/sections/Product/ProductAd.tsx",
+  "product": {
+    "title": "Camiseta Google",
+    "description": "Google description",
+    "price": "70,00",
+    "someImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10575/b917881e-495c-4534-867c-a453711429c7",
+    "imageSrc": "...",
+    "product": {
+      "product": {
+        "productID": "3",
+        "@type": "Product",
+        "sku": "google1",
+        "category": "serie",
+        "offers": {
+          "@type": "AggregateOffer",
+          "highPrice": 99,
+          "lowPrice": 89,
+          "offerCount": 7,
+          "offers": [
+            {
+              "@type": "Offer",
+              "availability": "https://schema.org/BackOrder",
+              "inventoryLevel": {},
+              "itemCondition": "https://schema.org/DamagedCondition",
+              "priceSpecification": [],
+              "giftSkuIds": [],
+              "teasers": [],
+              "image": [],
+              "video": [],
+              "price": 65,
+              "priceCurrency": "R$"
+            }
+          ]
+        },
+        "additionalProperty": [],
+        "aggregateRating": {
+          "@type": "AggregateRating"
+        },
+        "brand": {
+          "@type": "Brand"
+        },
+        "isRelatedTo": [],
+        "isSimilarTo": [],
+        "isVariantOf": {
+          "@type": "ProductGroup",
+          "hasVariant": [],
+          "additionalProperty": [],
+          "productGroupID": "serie1",
+          "image": [
+            {
+              "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10575/b917881e-495c-4534-867c-a453711429c7"
+            }
+          ]
+        },
+        "review": [],
+        "isAccessoryOrSparePartFor": [],
+        "questions": []
+      },
+      "@type": "ProductDetailsPage",
+      "breadcrumbList": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "image": [],
+            "video": [],
+            "item": "asdasd",
+            "position": 2
+          }
+        ],
+        "numberOfItems": 4
+      },
+      "seo": {
+        "title": "Google t-Shirt",
+        "canonical": "google",
+        "description": "Camiseta Google",
+        "noIndexing": true
+      }
+    }
+  },
+  "vertical": true,
+  "animateImage": true,
+  "productId": 2,
+  "highlight": true,
+  "loader": {
+    "data": []
+  },
+  "adDescription": "Estilo e inovação"
+}

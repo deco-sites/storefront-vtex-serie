@@ -10,7 +10,7 @@ export interface SectionBackGround {
   bgColor?: Colors;
   bgImage?: ImageWidget;
 }
-
+export type ProductAdSection = JSX.Element;
 export interface ProductAd {
   title: string;
   description?: string;

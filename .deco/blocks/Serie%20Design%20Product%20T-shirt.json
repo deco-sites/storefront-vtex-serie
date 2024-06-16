@@ -54,6 +54,70 @@
         "productID": "2"
       }
     },
-    "extensions": []
-  }
+    "extensions": [],
+    "product": {
+      "@type": "ProductDetailsPage",
+      "breadcrumbList": {
+        "@type": "BreadcrumbList",
+        "numberOfItems": 3,
+        "@id": "2",
+        "image": [
+          {
+            "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10575/6ccff070-e209-4438-91e6-28354afac422"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "image": [],
+            "video": [],
+            "item": "serie",
+            "position": 1
+          }
+        ],
+        "description": "Implantação de projetos ecommerce!"
+      },
+      "product": {
+        "@type": "Product",
+        "additionalProperty": [],
+        "aggregateRating": {
+          "@type": "AggregateRating"
+        },
+        "brand": {
+          "@type": "Brand"
+        },
+        "isRelatedTo": [],
+        "isSimilarTo": [],
+        "isVariantOf": {
+          "@type": "ProductGroup",
+          "hasVariant": [],
+          "additionalProperty": [],
+          "productGroupID": "serie1",
+          "name": "Serie Design - T-shirt"
+        },
+        "offers": {
+          "@type": "AggregateOffer",
+          "offers": [],
+          "highPrice": 69.99,
+          "lowPrice": 50,
+          "offerCount": 15
+        },
+        "review": [],
+        "isAccessoryOrSparePartFor": [],
+        "questions": [],
+        "productID": "2",
+        "sku": "serie1"
+      },
+      "seo": {
+        "title": "Camiseta Seri.e Design - Oficial",
+        "description": "Você nas alturas!",
+        "canonical": "serie"
+      }
+    },
+    "title": "Seri.e Design T-shirt - Oficial",
+    "description": "Tão agradável quando seu projeto no ar!!!",
+    "price": "52,00",
+    "imageSrc": "..."
+  },
+  "animateImage": true
 }
