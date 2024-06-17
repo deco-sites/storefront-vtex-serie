@@ -1,6 +1,6 @@
 import { effect, useSignal, useSignalEffect, signal as _signal } from "@preact/signals";
 import postProdEv from "../../actions/SaveProductAd/productsEvents.ts"
-import { ProductDetailsPage } from "apps/commerce/types.ts"
+import { Product, ProductDetailsPage } from "apps/commerce/types.ts"
 import Image from "apps/website/components/Image.tsx";
 import react from "react"
 import Toastify from "toastify";
@@ -16,7 +16,7 @@ import { invoke } from "../../runtime.ts";
 
 export interface Props{
     // product: ProductDetailsPage | null,
-    product: ProductAd | null,
+    product: ProductAd | Product | null,
     productId: string | number
 }
 
