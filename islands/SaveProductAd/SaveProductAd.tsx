@@ -1,9 +1,10 @@
 import { effect, useSignal, useSignalEffect, signal as _signal } from "@preact/signals";
 import postProdEv from "../../actions/SaveProductAd/productsEvents.ts"
-import { Product, ProductDetailsPage } from "apps/commerce/types.ts"
+import { ProductDetailsPage } from "apps/commerce/types.ts"
 import Image from "apps/website/components/Image.tsx";
 import react from "react"
 import Toastify from "toastify";
+import type { Product } from "apps/commerce/types.ts";
 
 
 
@@ -15,12 +16,14 @@ import Modal from "../../components/ui/Modal.tsx";
 import { invoke } from "../../runtime.ts";
 
 export interface Props{
-    // product: ProductDetailsPage | null,
-    product: ProductAd | Product | null,
-    productId: string | number
+
+    productId: string | number,
+    imageUrl?: string,
+    productName?: string
 }
 
-export default function SaveProductAd( { product, productId }: Props) {
+export default function SaveProductAd( { imageUrl, productName, productId }: Props) {
+    
 
     const openModal = useSignal(false);
     const textAreaModal = useSignal('');
@@ -80,13 +83,14 @@ export default function SaveProductAd( { product, productId }: Props) {
         return <div className={"flex max-w-[500px] bg-cyan-950 rounded-lg p-2"}>
          
             <div className={" w-[35%] flex overflow-hidden"}>
+
             <Image
                     width={640}
                     height={640}
                     class={"rounded-lg"}
                     sizes="(max-width: 640px) 100vw, 30vw"
-                    src={product?.product?.product.isVariantOf?.image?.[0]?.url || '' }
-                    alt={product?.product?.product.isVariantOf?.image?.[0]?.url || '' }
+                    src={imageUrl || '' }
+                    alt={imageUrl || '' }
                     decoding="async"
                     loading="lazy"
                   />
@@ -94,9 +98,9 @@ export default function SaveProductAd( { product, productId }: Props) {
             </div>
             <div className={" w-[65%] flex overflow-hidden flex-wrap *:w-[100%] *:leading-[1] *:text-left pl-2 *:text-white space-y-2 *:font-medium "}>
                 
-                <p className={"mt-2 !text-yellow-500"}>Salvar Produto: <span className={"font-bold text-white"}>{product?.product?.product.name}</span> </p>
+                <p className={"mt-2 !text-yellow-500"}>Salvar Produto: <span className={"font-bold text-white"}>{productName}</span> </p>
 
-                <span className={"text-lg"}>Observações: </span>
+                <span className={"text-lg"}>Observações: ID {productId} </span>
 
                 <textarea className={"!text-stone-950 pt-2"} name="saveProduct" id="saveProduct"
                 value={textAreaModal}

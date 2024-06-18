@@ -8,6 +8,10 @@
     {
       "__resolveType": "site/sections/Events/ShowProductEvents.tsx",
       "productID": "1"
+    },
+    {
+      "__resolveType": "site/sections/HTMXForm.tsx",
+      "reminders": []
     }
   ],
   "seo": {

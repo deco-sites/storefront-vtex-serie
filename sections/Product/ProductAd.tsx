@@ -9,6 +9,7 @@ import { AppContext } from "../../apps/site.ts";
 import { SectionProps } from "deco/mod.ts";
 import { ProductDetailsPage } from "apps/commerce/types.ts";
 import type { Product } from "apps/commerce/types.ts";
+import { proxySetCookie } from "apps/utils/cookie.ts";
 
 
 export interface ListItem {
@@ -112,6 +113,10 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
    return props
 }
 
+export interface tt {
+  prodPass?: undefined;
+}
+
 export default function ProductAd(props: SectionProps<typeof loader>) {
 // export default function ProductAd(props: Props) {
 
@@ -128,7 +133,12 @@ export default function ProductAd(props: SectionProps<typeof loader>) {
           <div className="bg-secondary">
             {props.product && (
               <div className="justify-center flex-wrap flex px-3 text-center relative">
-                <SaveProductAd product={ prodRender || null } productId={prodRender?.productID ?? 0 }  />
+                <SaveProductAd
+
+                productId={prodRender?.productID ?? 0 }
+                imageUrl={prodRender?.isVariantOf?.image?.[0]?.url || prodRender?.image?.[0].url}
+                productName={props.product?.product?.seo?.title ?? prodRender?.name }
+                />
                 <div className={(props.vertical ? "w-[40%] flex" : " lg:w-[40%] md:w-full " + "flex") + " overflow-hidden"}>
 
                   {( props.highlight  && props.getProdEvR && props.getProdEvR?.comments?.length ) && 

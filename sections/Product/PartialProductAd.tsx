@@ -23,7 +23,7 @@ export default function PartialProductAd({
   return (
     <div>
       
-      <div className={" hover:animate-animate__headShake relative z-[50] translate-x-0 flex pb-2 justify-around "}>
+      <div className={" hover:animate-animate__headShake relative z-[50] translate-x-0 flex pb-2 justify-center "}>
       {/* currentProduct: { currentProduct } <br />
       sectionPropsPARTIAL : {JSON.stringify(section.props, null, 2)} <br /> */}
         <section.Component
